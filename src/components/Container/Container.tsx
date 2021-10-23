@@ -6,6 +6,7 @@ import Home from '../Home/Home';
 import Education from '../Education/Education';
 import Experience from '../Experience/Experience';
 import Bio from '../Bio/Bio';
+import Footer from '../Footer/Footer';
 
 const Container = () => {
     return (
@@ -21,6 +22,7 @@ const Container = () => {
                     <Route exact path="/Experience" component={Experience} />
                     <Route exact path="/Bio" component={Bio} />
                 </Switch>
+                <Footer />
             </div>
         </div>
     );
