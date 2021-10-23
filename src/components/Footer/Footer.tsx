@@ -9,6 +9,7 @@ import {
 const Footer = () => {
     return (
         <div>
+            <hr />
             <ul>
                 <li>
                     <FaPhone />
