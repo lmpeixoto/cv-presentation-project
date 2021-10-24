@@ -4,7 +4,7 @@ interface iEducation {
     Institution: string;
     Start: string;
     End: string;
-    Descritpion?: string;
+    Description?: string;
 }
 
 const educationData: iEducation[] = [
