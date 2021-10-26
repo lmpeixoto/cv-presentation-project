@@ -1,8 +1,9 @@
 import React from 'react';
+import './Bio.css';
 
 const Bio: React.FC = () => {
     return (
-        <div>
+        <div className="Bio-container">
             <h1>Something about me</h1>
             <p>
                 Hi, I'm Luís! I'm a pharmacist and I have a passion for

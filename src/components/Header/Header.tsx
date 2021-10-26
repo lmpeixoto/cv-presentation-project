@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ToggleButton from '../ToggleButton/ToggleButton';
+import './Header.css';
 
 interface iHeaderProps {
     darkTheme: boolean;
@@ -9,22 +10,30 @@ interface iHeaderProps {
 
 const Header = ({ darkTheme, toggleDarkTheme }: iHeaderProps) => {
     return (
-        <div>
-            <ul>
-                <li>
-                    <Link to="/Home">Home</Link>
+        <div className="Header-container">
+            <ul className="Header-navigator">
+                <li className="Navigator-item">
+                    <Link className="Navigator-link" to="/Home">
+                        Home
+                    </Link>
                 </li>
-                <li>
-                    <Link to="/Education">Education</Link>
+                <li className="Navigator-item">
+                    <Link className="Navigator-link" to="/Education">
+                        Education
+                    </Link>
                 </li>
-                <li>
-                    <Link to="/Experience">Experience</Link>
+                <li className="Navigator-item">
+                    <Link className="Navigator-link" to="/Experience">
+                        Experience
+                    </Link>
                 </li>
-                <li>
-                    <Link to="/Bio">Bio</Link>
+                <li className="Navigator-item">
+                    <Link className="Navigator-link" to="/Bio">
+                        Bio
+                    </Link>
                 </li>
             </ul>
-            <div>
+            <div className="Theme-toggler">
                 <ToggleButton
                     darkTheme={darkTheme}
                     toggleDarkTheme={toggleDarkTheme}

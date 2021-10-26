@@ -1,0 +1,23 @@
+.Home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+.Tech-container {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 2rem;
+}
+
+.Img-container {
+    display: flex;
+    margin: 2rem 2rem;
+}
+
+img {
+    max-height: 30vh;
+    max-width: 30vw;
+}

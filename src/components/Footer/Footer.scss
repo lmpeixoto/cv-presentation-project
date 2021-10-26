@@ -1,0 +1,31 @@
+.Footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.Footer-contacts {
+    display: flex;
+    align-items: center;
+}
+
+.Footer-social-item {
+    display: flex;
+    border-radius: 5px;
+    margin: 15px 35px;
+    font-size: 1.5em;
+    align-items: center;
+}
+
+.Footer-social-icon {
+    margin-right: 1em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
