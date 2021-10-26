@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ToggleButton from '../ToggleButton/ToggleButton';
 
 const Header = () => {
     return (
@@ -18,6 +19,9 @@ const Header = () => {
                     <Link to="/Bio">Bio</Link>
                 </li>
             </ul>
+            <div>
+                <ToggleButton />
+            </div>
             <hr />
         </div>
     );

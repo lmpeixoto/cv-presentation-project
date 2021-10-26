@@ -5,6 +5,7 @@ import {
     FaEnvelopeSquare,
     FaPhone
 } from 'react-icons/fa';
+import ToggleButton from '../ToggleButton/ToggleButton';
 
 const Footer: React.FC = () => {
     return (
@@ -28,6 +29,9 @@ const Footer: React.FC = () => {
                     <a href="https://github.com/lmpeixoto">Github</a>
                 </li>
             </ul>
+            <div>
+                <ToggleButton />
+            </div>
         </div>
     );
 };
