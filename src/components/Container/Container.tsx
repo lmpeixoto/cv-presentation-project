@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 import './Container.css';
 import Header from '../Header/Header';
 import { Route, Switch, Redirect } from 'react-router-dom';
@@ -9,10 +10,19 @@ import Bio from '../Bio/Bio';
 import Footer from '../Footer/Footer';
 
 const Container: React.FC = () => {
+    const [darkTheme, setDarkTheme] = useState<boolean>(false);
+
+    const toggleDarkTheme = (): void => {
+        setDarkTheme(!darkTheme);
+    };
+
     return (
         <div>
             <div>
-                <Header />
+                <Header
+                    darkTheme={darkTheme}
+                    toggleDarkTheme={toggleDarkTheme}
+                />
                 <Switch>
                     <Route exact path="/Home" component={Home} />
                     <Route exact path="/">
@@ -22,7 +32,10 @@ const Container: React.FC = () => {
                     <Route exact path="/Experience" component={Experience} />
                     <Route exact path="/Bio" component={Bio} />
                 </Switch>
-                <Footer />
+                <Footer
+                    darkTheme={darkTheme}
+                    toggleDarkTheme={toggleDarkTheme}
+                />
             </div>
         </div>
     );

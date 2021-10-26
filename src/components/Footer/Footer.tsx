@@ -7,7 +7,12 @@ import {
 } from 'react-icons/fa';
 import ToggleButton from '../ToggleButton/ToggleButton';
 
-const Footer: React.FC = () => {
+interface iFooterProps {
+    darkTheme: boolean;
+    toggleDarkTheme: () => void;
+}
+
+const Footer = ({ darkTheme, toggleDarkTheme }: iFooterProps) => {
     return (
         <div>
             <hr />
@@ -30,7 +35,10 @@ const Footer: React.FC = () => {
                 </li>
             </ul>
             <div>
-                <ToggleButton />
+                <ToggleButton
+                    darkTheme={darkTheme}
+                    toggleDarkTheme={toggleDarkTheme}
+                />
             </div>
         </div>
     );

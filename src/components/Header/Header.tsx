@@ -2,7 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import ToggleButton from '../ToggleButton/ToggleButton';
 
-const Header = () => {
+interface iHeaderProps {
+    darkTheme: boolean;
+    toggleDarkTheme: () => void;
+}
+
+const Header = ({ darkTheme, toggleDarkTheme }: iHeaderProps) => {
     return (
         <div>
             <ul>
@@ -20,7 +25,10 @@ const Header = () => {
                 </li>
             </ul>
             <div>
-                <ToggleButton />
+                <ToggleButton
+                    darkTheme={darkTheme}
+                    toggleDarkTheme={toggleDarkTheme}
+                />
             </div>
             <hr />
         </div>

@@ -1,80 +1,70 @@
-.wrg-toggle {
-    touch-action: pan-x;
+.switch {
+    position: relative;
     display: inline-block;
-    position: relative;
+    width: 75px;
+    height: 40px;
+    background-color: #2c2c2c;
+    color: #000;
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+}
+
+.switch.false,
+.switch.true {
+    border-radius: 25px;
+    padding: 5px;
     cursor: pointer;
-    background-color: transparent;
-    border: 0;
-    padding: 0;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    -webkit-tap-highlight-color: transparent;
 }
 
-.wrg-toggle-input {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
+.switch.false:before,
+.switch.false:after {
+    -webkit-transition: 0.6s;
+    transition: all 0.6s;
+}
+
+.switch.true:before,
+.switch.true:after {
+    -webkit-transition: 0.6s;
+    transition: all 0.6s;
+}
+
+.switch.false:before,
+.switch.true:before {
+    display: block;
     position: absolute;
-    width: 1px;
-}
-
-.wrg-toggle-check,
-.wrg-toggle-uncheck {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    top: 0;
-    bottom: 0;
-    margin-top: auto;
-    margin-bottom: auto;
-    line-height: 0;
-    opacity: 0;
-    transition: opacity 0.25s ease;
-}
-.wrg-toggle-check {
-    left: 8px;
-}
-.wrg-toggle-uncheck {
-    opacity: 1;
-    right: 10px;
-}
-
-.wrg-toggle-uncheck span,
-.wrg-toggle-check span {
-    align-items: center;
-    display: flex;
-    height: 10px;
-    justify-content: center;
-    position: relative;
-    width: 10px;
-}
-
-.wrg-toggle-container {
-    width: 50px;
-    height: 24px;
-    padding: 0;
-    border-radius: 30px;
-    background-color: #4d4d4d;
-    transition: all 0.2s ease;
-}
-
-.wrg-toggle-circle {
-    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0ms;
-    position: absolute;
-    top: 1px;
-    left: 1px;
-    width: 22px;
-    height: 22px;
-    border: 1px solid #4d4d4d;
+    content: '';
+    height: 39px;
+    width: 39px;
+    left: 4px;
+    top: 5px;
+    background-color: #f2c74e;
+    -webkit-transition: 0.6s;
+    transition: all 0.6s;
+    -webkit-transition-delay: 0.01s;
+    transition-delay: 0.01s;
+    -moz-box-shadow: inset -8px -8px 6px -6px #c7960f;
+    -webkit-box-shadow: inset -8px -8px 6px -6px #c7960f;
     border-radius: 50%;
-    background-color: #fafafa;
-    box-sizing: border-box;
-    transition: all 0.25s ease;
+    box-shadow: inset -8px -8px 6px -6px #c7960f;
+}
+
+.switch.false:after {
+    display: block;
+    position: absolute;
+    content: '🌞';
+    left: 17px;
+    top: 15px;
+}
+
+.switch.true:before {
+    -webkit-transform: translateX(38px);
+    -ms-transform: translateX(38px);
+    transform: translateX(38px);
+}
+
+.switch.true:after {
+    position: absolute;
+    content: '🌜';
+    left: 56px;
+    top: 15px;
 }
