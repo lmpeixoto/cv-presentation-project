@@ -18,6 +18,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 0;
 }
 
 .Footer-social-item {
@@ -34,6 +35,10 @@
 
 .Footer-social-icon {
   margin-right: 1em;
+}
+
+.Theme-toggler {
+  margin: 0 0;
 }
 
 ul {

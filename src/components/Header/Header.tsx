@@ -39,7 +39,6 @@ const Header = ({ darkTheme, toggleDarkTheme }: iHeaderProps) => {
                     toggleDarkTheme={toggleDarkTheme}
                 />
             </div>
-            <hr />
         </div>
     );
 };

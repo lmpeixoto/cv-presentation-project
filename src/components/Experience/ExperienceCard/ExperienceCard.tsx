@@ -32,8 +32,8 @@ const ExperienceCard = ({
             <h5>TechStack:</h5>
             <div className="Stack-card">
                 <ul>
-                    {techStack.map((tec) => (
-                        <li>{tec}</li>
+                    {techStack.map((tec, i) => (
+                        <li key={i}>{tec}</li>
                     ))}
                 </ul>
             </div>

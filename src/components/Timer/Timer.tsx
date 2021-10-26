@@ -7,30 +7,16 @@ interface iTimerProps {
 
 const Timer = ({ date }: iTimerProps) => {
     const now = moment(new Date());
-    const duration = moment.duration(now.diff(moment(date)));
-    //Get Years and subtract from duration
-    let years = Math.floor(duration.asYears());
-    duration.subtract(moment.duration(years, 'years'));
-    //Get Days and subtract from duration
-    let days = duration.days();
-    duration.subtract(moment.duration(days, 'days'));
-    //Get hours and subtract from duration
-    let hoursBeforeDays = duration.hours();
-    duration.subtract(moment.duration(hoursBeforeDays, 'hours'));
-    let hours = hoursBeforeDays + days * 24;
-    //Get Minutes and subtract from duration
-    let minutes = duration.minutes();
-    duration.subtract(moment.duration(minutes, 'minutes'));
-    //Get seconds
-    let seconds = duration.seconds();
+    const yearsDiff = now.diff(date, 'years');
+    const hoursDiff = now.diff(date, 'hours');
+    const minutesDiff = now.diff(date, 'minutes');
 
     return (
         <div>
             <h5>Time elapsed since then:</h5>
-            <p>Years:{years}</p>
-            <p>hours:{hours}</p>
-            <p>minutes:{minutes}</p>
-            <p>seconds:{seconds}</p>
+            <p>Years:{yearsDiff}</p>
+            <p>hours:{hoursDiff}</p>
+            <p>minutes:{minutesDiff}</p>
         </div>
     );
 };

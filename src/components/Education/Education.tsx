@@ -7,7 +7,7 @@ const Education: React.FC = () => {
     return (
         <div className="Education-container">
             {educationData.map((education) => (
-                <>
+                <div key={education.Id}>
                     <EducationCard
                         name={education.Name}
                         institution={education.Institution}
@@ -16,7 +16,7 @@ const Education: React.FC = () => {
                         end={education.End}
                         description={education.Description}
                     />
-                </>
+                </div>
             ))}
         </div>
     );

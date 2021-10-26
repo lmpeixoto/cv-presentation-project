@@ -7,7 +7,7 @@ const Experience: React.FC = () => {
     return (
         <>
             {experienceData.map((experience) => (
-                <div className="Experience-container">
+                <div key={experience.Id} className="Experience-container">
                     <ExperienceCard
                         name={experience.Name}
                         institution={experience.Institution}

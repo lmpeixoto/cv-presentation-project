@@ -1,4 +1,5 @@
 interface iEducation {
+    Id: number;
     Name: string;
     Degree: string;
     Institution: string;
@@ -9,6 +10,7 @@ interface iEducation {
 
 const educationData: iEducation[] = [
     {
+        Id: 1,
         Name: 'Bioinformatics',
         Degree: 'Master',
         Institution: 'University of Minho',
@@ -16,6 +18,7 @@ const educationData: iEducation[] = [
         End: '2018-10-01'
     },
     {
+        Id: 2,
         Name: 'Pharmaceutical Sciences',
         Degree: 'Master',
         Institution: 'University of Porto',

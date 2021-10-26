@@ -13,8 +13,49 @@ div {
   margin: 1vh 1vw;
 }
 
+.Light {
+  color: #202020;
+  background-color: #e5e5e5;
+}
+
+.Light a:link {
+  color: #202020;
+}
+
+.Light a:visited {
+  color: #202020;
+}
+
+.Light a:hover {
+  color: #e5e5e5;
+  background-color: #202020;
+}
+
+.Light a:active {
+  color: #e5e5e5;
+  background-color: #202020;
+}
+
 .Dark {
   color: #e5e5e5;
   background-color: #202020;
+}
+
+.Dark a:link {
+  color: #e5e5e5;
+}
+
+.Dark a:visited {
+  color: #e5e5e5;
+}
+
+.Dark a:hover {
+  color: #202020;
+  background-color: #e5e5e5;
+}
+
+.Dark a:active {
+  color: #202020;
+  background-color: #e5e5e5;
 }
 /*# sourceMappingURL=Container.css.map */

@@ -7,6 +7,7 @@
 
 .Header-navigator {
     display: flex;
+    margin-bottom: 0;
 }
 
 .Navigator-item {
@@ -18,6 +19,10 @@
 
 .Navigator-link {
     text-decoration: none;
+}
+
+.Theme-toggler {
+    margin: 0 0;
 }
 
 ul {

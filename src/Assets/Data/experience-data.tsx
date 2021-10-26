@@ -1,4 +1,5 @@
 interface iExperience {
+    Id: number;
     Name: string;
     Institution: string;
     Description: string;
@@ -9,6 +10,7 @@ interface iExperience {
 
 const experienceData: iExperience[] = [
     {
+        Id: 1,
         Name: 'Frontend Developer',
         Institution: 'LibreOffice',
         Description:
@@ -18,6 +20,7 @@ const experienceData: iExperience[] = [
         TechStack: ['Javascript', 'Vue', 'Git', 'Websockets']
     },
     {
+        Id: 2,
         Name: 'Fullstack Developer',
         Institution: 'FightPandemics',
         Description:
@@ -35,6 +38,7 @@ const experienceData: iExperience[] = [
         ]
     },
     {
+        Id: 3,
         Name: 'Development of deep learning tools for cancer omics analysis',
         Institution: 'University of Minho',
         Description:

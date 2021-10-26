@@ -16,7 +16,6 @@ interface iFooterProps {
 const Footer = ({ darkTheme, toggleDarkTheme }: iFooterProps) => {
     return (
         <div className="Footer-container">
-            <hr />
             <ul className="Footer-contacts">
                 <li className="Footer-social-item">
                     <FaPhone className="Footer-social-icon" />
