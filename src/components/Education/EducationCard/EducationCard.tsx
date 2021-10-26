@@ -21,14 +21,14 @@ const EducationCard = ({
     return (
         <div>
             <h1>{name}</h1>
-            <h3>{degree}</h3>
-            <h5>{institution}</h5>
-            <h5>{start}</h5>
-            <h5>{end}</h5>
+            <h3>Degree: {degree}</h3>
+            <h5>Institution: {institution}</h5>
+            <h5>Start: {start}</h5>
+            <h5>End: {end}</h5>
             <h5>
                 <Timer date={start} />
             </h5>
-            <h5>{description}</h5>
+            {description ? <h5>Description: {description}</h5> : ''}
         </div>
     );
 };

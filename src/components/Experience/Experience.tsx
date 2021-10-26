@@ -1,12 +1,13 @@
 import React from 'react';
 import experienceData from '../../Assets/Data/experience-data';
 import ExperienceCard from './ExperienceCard/ExperienceCard';
+import './Experience.css';
 
 const Experience: React.FC = () => {
     return (
         <>
             {experienceData.map((experience) => (
-                <div>
+                <div className="Experience-container">
                     <ExperienceCard
                         name={experience.Name}
                         institution={experience.Institution}

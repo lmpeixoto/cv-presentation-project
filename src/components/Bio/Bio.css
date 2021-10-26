@@ -3,6 +3,9 @@
   display: -ms-flexbox;
   display: flex;
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 10vh 10vw;
 }
 /*# sourceMappingURL=Bio.css.map */

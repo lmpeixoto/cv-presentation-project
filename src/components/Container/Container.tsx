@@ -17,7 +17,7 @@ const Container: React.FC = () => {
     };
 
     return (
-        <div>
+        <div className={darkTheme ? 'Dark' : ''}>
             <Header darkTheme={darkTheme} toggleDarkTheme={toggleDarkTheme} />
             <Switch>
                 <Route exact path="/Home" component={Home} />

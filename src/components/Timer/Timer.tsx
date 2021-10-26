@@ -26,7 +26,7 @@ const Timer = ({ date }: iTimerProps) => {
 
     return (
         <div>
-            <h5>Time elapsed since the start until now:</h5>
+            <h5>Time elapsed since then:</h5>
             <p>Years:{years}</p>
             <p>hours:{hours}</p>
             <p>minutes:{minutes}</p>

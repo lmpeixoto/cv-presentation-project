@@ -1,7 +1,12 @@
 div {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 1vh 1vw;
+}
+
+.Dark {
+    color: #e5e5e5;
+    background-color: #202020;
 }

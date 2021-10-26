@@ -1,5 +1,6 @@
 import React from 'react';
 import Timer from '../../Timer/Timer';
+import './ExperienceCard.css';
 
 interface iExperienceCardProps {
     name: string;
@@ -19,9 +20,9 @@ const ExperienceCard = ({
     techStack
 }: iExperienceCardProps) => {
     return (
-        <div>
-            <h1>Name: {name}</h1>
-            <h3>Institution: {institution}</h3>
+        <div className="Experience-card">
+            <h1>{name}</h1>
+            <h3>{institution}</h3>
             <h5>Description: {description}</h5>
             <h5>Start: {start}</h5>
             <h5>End: {end}</h5>
@@ -29,7 +30,7 @@ const ExperienceCard = ({
                 <Timer date={start} />
             </h5>
             <h5>TechStack:</h5>
-            <div>
+            <div className="Stack-card">
                 <ul>
                     {techStack.map((tec) => (
                         <li>{tec}</li>
