@@ -7,9 +7,9 @@ import Education from '../Education/Education';
 import Experience from '../Experience/Experience';
 import Bio from '../Bio/Bio';
 import Footer from '../Footer/Footer';
-import './Container.css';
+import './App.css';
 
-const Container: React.FC = () => {
+const App: React.FC = () => {
     const [darkTheme, setDarkTheme] = useState<boolean>(false);
 
     const toggleDarkTheme = (): void => {
@@ -33,4 +33,4 @@ const Container: React.FC = () => {
     );
 };
 
-export default Container;
+export default App;
