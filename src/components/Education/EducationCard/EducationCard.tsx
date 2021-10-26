@@ -1,4 +1,5 @@
 import React from 'react';
+import Timer from '../../Timer/Timer';
 
 interface iEducationCardProps {
     name: string;
@@ -24,6 +25,9 @@ const EducationCard = ({
             <h5>{institution}</h5>
             <h5>{start}</h5>
             <h5>{end}</h5>
+            <h5>
+                <Timer date={start} />
+            </h5>
             <h5>{description}</h5>
         </div>
     );

@@ -13,7 +13,7 @@ const experienceData: iExperience[] = [
         Institution: 'LibreOffice',
         Description:
             'Mainly the maintenance of KiwiIrc (IRC chat used internaly for the team communication) UI',
-        Start: 'September 2021',
+        Start: '2021-09-01',
         End: 'Ongoing',
         TechStack: ['Javascript', 'Vue', 'Git', 'Websockets']
     },
@@ -22,8 +22,8 @@ const experienceData: iExperience[] = [
         Institution: 'FightPandemics',
         Description:
             'Maintenance of the REST API and MongoDB database, development of the chat feature, integration with React Frontend and UI improvement',
-        Start: 'August 2020',
-        End: 'September 2021',
+        Start: '2020-08-01',
+        End: '2021-09-01',
         TechStack: [
             'Javascript',
             'Node',
@@ -39,8 +39,8 @@ const experienceData: iExperience[] = [
         Institution: 'University of Minho',
         Description:
             'Constructed a pipeline for using deep neural networks with cancer omics data.',
-        Start: 'October 2017',
-        End: 'September 2018',
+        Start: '2017-10-01',
+        End: '2018-09-01',
         TechStack: [
             'Python',
             'Theano',
