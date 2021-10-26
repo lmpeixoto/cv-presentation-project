@@ -8,7 +8,7 @@ import Experience from '../Experience/Experience';
 import Bio from '../Bio/Bio';
 import Footer from '../Footer/Footer';
 
-const Container = () => {
+const Container: React.FC = () => {
     return (
         <div>
             <div>

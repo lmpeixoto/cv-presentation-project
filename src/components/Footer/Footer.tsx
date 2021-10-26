@@ -6,7 +6,7 @@ import {
     FaPhone
 } from 'react-icons/fa';
 
-const Footer = () => {
+const Footer: React.FC = () => {
     return (
         <div>
             <hr />
